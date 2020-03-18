@@ -1,0 +1,28 @@
+@(title: String, app: String, controller: String)(content: Html)
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <!--  移动端页面设置视口宽度等于设备宽度，并禁止缩放。-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("css/common.css")' />
+    <link rel="stylesheet"  href='@routes.Assets.at("css/font-awesome.min.css")'>
+
+
+	 <script src='@routes.Assets.at("js/angular.min.js")'></script>
+     <script src='@routes.Assets.at("js/jquery-1.11.1.min.js")'></script>
+    <meta name="keywords" content="铁皮石斛-莲洲铁皮石斛-珠海莲洲铁皮石斛-斗门特产-斗门生态游-铁皮石斛种植基地-珠海特产-珠海保健品 " />
+    <meta name="Description" content="逸丰生态养生园（www.yf-china.com）坐落在珠海斗门连州镇，是中国最大的铁皮石斛种植基地之一，园区内有大型花海、珍奇动物、养生餐厅、游玩乐园等等相关，咨询热线:4008-233-208。" />
+    <title>广东逸丰生态实业有限公司-铁皮石斛-莲洲铁皮石斛种植基地-斗门区生态圈-斗门莲洲镇</title>
+</head>
+<body ng-app="@app" ng-controller="@controller">
+   
+    	@content
+  
+</body>
+</html>

@@ -1,0 +1,118 @@
+@(title: String, app: String, controller: String)(content: Html)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="铁皮石斛-莲洲铁皮石斛-珠海莲洲铁皮石斛-斗门特产-斗门生态游-铁皮石斛种植基地-珠海特产-珠海保健品 " />
+    <meta name="Description" content="逸丰生态养生园（www.yf-china.com）坐落在珠海斗门连州镇，是中国最大的铁皮石斛种植基地之一，园区内有大型花海、珍奇动物、养生餐厅、游玩乐园等等相关，咨询热线:4008-233-208。" />
+    <title>广东逸丰生态实业有限公司-铁皮石斛-莲洲铁皮石斛种植基地-斗门区生态圈-斗门莲洲镇</title>
+        <link rel="stylesheet" href='@routes.Assets.at("pc_css/common.css")' />
+        <script src='@routes.Assets.at("js/angular.min.js")'></script>
+        <script src='@routes.Assets.at("js/controllers/Pcframe_controller.js")'></script>
+        <script src='@routes.Assets.at("js/jquery-1.11.1.min.js")'></script>
+        <script src='@routes.Assets.at("js/dmstyle.js")'></script>
+        <link rel="stylesheet" href='@routes.Assets.at("css/pc_lb.css")' />
+
+    </head>
+
+    <body>
+    
+        <header>
+
+            <div class="home_head clear" ng-app="PcFrameApp" ng-controller="PcFrameController" >
+                <div class="logo">
+                    <a href="/p/home"><img src='@routes.Assets.at("pc_images/logo.png")' alt="logo" /></a>
+                </div>
+                <div class="nav">
+                    <ul class="navbar clear">
+                        <li><a href="/p/home" id="dh1">首页</a></li>
+                        <li onmouseover="mOver(1)" onmouseout="mOut(1)" id="1">
+                            <a href="/p/product?catalogsName={{homes[0].id}}" id="dh2">产品分类</a>
+                            <div class="classify" id="c1">
+                                <ul class="class_ul clear">
+                                    <li ng-repeat="home in homes"><a style="line-height:20px ;" href="/p/product?catalogsName={{home.id}}"><span ng-bind="home.name"></span></a> </li>
+
+                                </ul>
+                                <div class="fang"></div>
+                            </div>
+                        </li>
+                        <li><a href="/p/news" id="dh3">新闻中心</a></li>
+                        <li><a href="/p/culture" id="dh4">石斛文化 </a></li>
+                        <li><a href="/p/about" id="dh5">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="home_login">
+                    <img src='@routes.Assets.at("pc_images/1.jpg")'/>
+                </div>
+                <p onmouseover="mOver(2)" onmouseout="mOut(2)" id="2" class="shayi">扫一扫微信二维码下单</p>
+                <div class="erwei">
+                    <div class="erweimg" id="c2">
+                        <img src='@routes.Assets.at("pc_images/erweima.jpg")' style="width:100%"/>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="A2" style="min-height:500px;margin:auto;" ng-app="@app" ng-controller="@controller">@content</div>
+
+        <div class="home_bottom">
+            <div class="home_end clear">
+                <div class="bottomimg">
+                    <img src='@routes.Assets.at("pc_images/logo_botm.jpg")'/>
+                </div>
+                <div class="bottomain">
+                    <div class="row li1">
+                        <ul>
+                            <li class="special"><a >关于逸丰</a></li>
+                            <li><a href="/p/about#ab1">逸丰简介</a></li>
+                            <li><a href="/p/about#ab1.1">逸丰资讯</a></li>
+                            <li><a href="/p/about#ab1.2">发展历程</a></li>
+                            <li><a href="/p/about#ab1.3">董事长致辞</a></li>
+                        </ul>
+                    </div>
+                    <div class="row li2">
+                        <ul>
+                            <li class="special"><a>石斛文化</a></li>
+                            <li><a href="/p/culture#ab1">莲洲·铁皮石斛</a></li>
+                            <li><a href="/p/culture#ab2">地理环境</a></li>
+                            <li><a href="/p/culture#ab3">优质种苗</a></li>
+                            <li><a href="/p/culture#ab4">十大功效</a></li>
+                        </ul>
+                    </div>
+                    <div class="row li3">
+                        <ul>
+                            <li class="special"><a>帮助中心</a></li>
+                            <li><a href="/p/about#ab3">在线支付</a></li>
+                            <li><a href="/p/about#ab3.1">退货说明</a></li>
+                            <li><a href="/p/about#ab3.2">发票说明</a></li>
+                            <li><a href="/p/about#ab3.3">常见问题</a></li>
+                        </ul>
+                    </div>
+                    <div class="row li4">
+                        <ul>
+                            <li class="special"><a href="/p/about#ab4">联系我们</a></li>
+                            <li><a>广东逸丰生态实业有限公司</a></li>
+                            <li><a>客服：400-8223-208</a></li>
+                            <li><a>邮箱：yifeng@@yifeng.com</a></li>
+                            <li><a>地址：珠海市香洲区前山路76号</a></li>
+                        </ul>
+                    </div>
+                    <div class="row rowtextri">
+                        <ul>
+                            <li class="special"><a>关注我们</a></li>
+                            <li><a href="http://weibo.com/p/1005055885168904"><img style="vertical-align:top ;" src='@routes.Assets.at("pc_images/xinlang.jpg")'/>新浪微博</a>
+                            </li>
+                            <li><a href="http://t.qq.com/lianzhoutiepishi"><img style="vertical-align:top ;" src='@routes.Assets.at("pc_images/thent.jpg")'/>腾讯微博</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottomimg">
+                    <img src='@routes.Assets.at("pc_images/erweima.jpg")' style=" width: 106px ; height: 106px ; margin-top: 26px ;" />
+                </div>
+                <p class="bottomp">Copyright © 2016 yf-st.com Inc. All Rights Reserved. 逸丰生态实业有限公司 版权所有  粤ICP备<a href="http://www.miitbeian.gov.cn" style="color: #b58f50;">16001691</a>号</p>
+            </div>
+        </div>
+    </body>
+</html>

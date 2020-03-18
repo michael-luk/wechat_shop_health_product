@@ -1,0 +1,188 @@
+@(title: String, app: String, controller: String)(content: Html)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<meta name="baidu-site-verification" content="Nmpriki4lF" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>中国逸丰生态集团-农业生态养生园-铁皮石斛种植基地-石斛产品中心-招商加盟</title>
+		<meta name="keywords" content="石斛种植基地，养生生态园，仿野生铁皮石斛产品" />
+		<meta name="Description" content="中国逸丰生态集团总部位于珠海市香洲区前山路76号（3楼），业务范围：农业生态养生园-仿野生铁皮石斛种植基地，集种植，加工，销售一体化，现向全国招商加盟。电话：400-8223-208" />
+		<link rel="shortcut icon" href='/assets/icon/favicon.ico'/>
+
+        <link rel="stylesheet" href='@routes.Assets.at("pc_css/blocCommon.css")' />
+        <link rel="stylesheet"  href='@routes.Assets.at("css/font-awesome.min.css")'>
+
+        <script src='@routes.Assets.at("js/angular.min.js")'></script>
+        <script src='@routes.Assets.at("js/jquery-1.11.1.min.js")'></script>
+        <script src='@routes.Assets.at("pc_js/bloc.js")'></script>
+    </head>
+    <script>
+            function AddFavorite(sURL, sTitle)
+            {
+                try
+                {
+                    window.external.AddFavorite(sURL, sTitle);
+                }
+                catch (e)
+                {
+                    try
+                    {
+                        window.sidebar.addPanel(sTitle, sURL, "");
+                    }
+                    catch (e)
+                    {
+                        alert("加入收藏，请使用Ctrl+D进行添加");
+                    }
+                }
+            }
+    </script>
+    <body>
+        <header>
+            <div class="header_body">
+                <div class="header_top clear">
+                    <div class="left">
+                        <span>欢迎光临逸丰集团官方网站！</span>
+                        <a href="/p/home"  title="点击进入逸丰铁皮石斛商城" target="_blank"target="view_window">进入商城>></a>
+                    </div>
+                    <div class="right">
+                        <ul class="clear right_ul">
+                            <li><i class="icon-phone"></i>400-8223-208</li>
+                            <a href="javascript:AddFavorite('www.yf-st.com/b/home', '逸丰集团官网')"><li><i class=" icon-heart"></i> 收藏本站</li></a>
+                            <li onmouseover="mOver(4)" onmouseout="mOut(4)" id="4">
+                                关注我们<i class="icon-qrcode"></i>
+                                <div class="erwei " id="c4">
+                                    <img src='@routes.Assets.at("pc_images/erwei.png")' alt="扫描图中二维码可以关注逸丰微信公众号">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_top clear">
+                <a id="cd-logo" href="/" title="中国逸丰生态集团-首页">
+                    <img src='/assets/pc_images/toplogo.png' alt="中国逸丰生态集团LOGO">
+                </a>
+            </div>
+            <div class="menu_div">
+                <ul class="clear menu_ul">
+                    <a href="/" title="中国逸丰集团官网首页">
+                        <li>首页</li>
+                    </a>
+                    <li onmouseover="mOver(1)" onmouseout="mOut(1)" id="1">
+                        <a href="/industry" title="农业生态养生园-铁皮石斛种植基地"><span>产业基地<i class=" icon-caret-down "></i></span></a>
+                        <ul class="navdisplyas" id="c1">
+                            <a href="/matrixc" title="生态养生园铁皮石斛种植基地">
+                                <li>生态养生园<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/matrixb2" title="那洲铁皮石斛种植基地">
+                                <li>那洲基地<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/matrixa2" title="莲洲铁皮石斛种植基地">
+                                <li>莲洲基地<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/plan" title="铁皮石斛种植大棚">
+                                <li>石斛种植大棚<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/jian" title="实时监控技术">
+                                <li>实时监控技术<i class=" icon-caret-right"></i> </li>
+                            </a>
+
+                        </ul>
+                    </li>
+                    <a href="/p/product?catalogsName=1" title="点击进入逸丰商城产品中心" target="view_window">
+                        <li>产品中心</li>
+                    </a>
+                    <a href="/join" title="逸丰集团招商加盟详情">
+                        <li>招商加盟</li>
+                    </a>
+                    <li onmouseover="mOver(2)" onmouseout="mOut(2)" id="2">
+                        新闻动态<i class=" icon-caret-down "></i>
+                        <ul class="navdisplyas" id="c2">
+                            <a href="/intro" title="公司动态详情">
+                                <li>公司动态<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/media" title="媒体报道详情">
+                                <li>媒体报道<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/news" title="行业资讯详情">
+                                <li>行业资讯<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/staff" title="员工风采详情">
+                                <li>员工风采<i class=" icon-caret-right"></i> </li>
+                            </a>
+                        </ul>
+                    </li>
+                    <li onmouseover="mOver(3)" onmouseout="mOut(3)" id="3">
+                        <a href="/about" title="中国逸丰生态集团"> <span>关于逸丰<i class=" icon-caret-down "></i></span></a>
+                        <ul class="navdisplyas" id="c3">
+                            <a href="/profile" title="逸丰集团概况">
+                                <li>公司概况<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/history" title="逸丰集团的发展历程">
+                                <li>发展历程<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/honor" title="逸丰集团资质荣誉">
+                                <li>资质荣誉<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/chairman2" title="董事长林伟波致辞">
+                                <li>董事长致辞<i class=" icon-caret-right"></i> </li>
+                            </a>
+                        </ul>
+                    </li>
+                    <a href="/add" title="逸丰集团招聘信息">
+                        <li>逸丰招聘</li>
+                    </a>
+                    <a href="/contact" title="联系方式-通讯地址">
+                        <li>联系我们</li>
+                    </a>
+                </ul>
+            </div>
+        </header>
+
+        <div style="min-height:500px;margin:auto;" ng-app="@app" ng-controller="@controller">@content</div>
+
+        <footer>
+            <div class="clear footer_main">
+                <div class="bottom_logo left">
+                    <a href="/">
+                        <img src='@routes.Assets.at("pc_images/logo_buttom.png")'>
+                    </a>
+                </div>
+                <div class="bottom_txt left">
+                    <ul class="clear txt_ul">
+                        <a href="/about"><li>关于逸丰</li></a>
+                        <a href="/industry"><li>产业基地</li></a>
+                        <a href="/intro"><li>新闻中心</li></a>
+                        <a href="/p/product?catalogsName=1" target="view_window"><li>产品中心</li></a>
+                        <a href="/join"><li>招商加盟</li></a>
+                        <a href="/add"><li>加入逸丰</li></a>
+                        <a href="/contact"><li style="border: none">联系我们</li></a>
+                    </ul>
+                    <p>Copyright © 2016 yf-china.com Inc. All Rights Reserved. 中国逸丰生态集团 版权所有  粤ICP备粤ICP备16028587号</p>
+                </div>
+                <div class="bottom_erwei left" title="扫描二维码进入微信公众号">
+                    <img src='@routes.Assets.at("pc_images/erwei.png")'>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#">
+            <div style="width: 60px; position: fixed; bottom: 20%; right: 8%;">
+                <a href="#">
+                <img src='@routes.Assets.at("pc_images/left_big.png")'>
+                </a>
+            </div>
+        </a>
+
+    </body>
+	 <script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?5934a2275622d74e995d71931fdd9fa0";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</html>

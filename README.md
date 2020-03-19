@@ -1,4 +1,4 @@
-# wechat_shop_eaglewood
+# wechat_shop_health_product
 保健品微信商城(公众号商城微信支付)
 
 开发框架: 后台Play框架2.3.8版本 https://www.playframework.com/documentation/2.3.x/Home, 前台AngularJS+JQuery

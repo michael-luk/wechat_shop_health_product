@@ -2,6 +2,7 @@
 保健品微信商城(公众号商城微信支付)
 
 开发框架: 后台Play框架2.3.8版本 https://www.playframework.com/documentation/2.3.x/Home, 前台AngularJS+JQuery
+
 数据库:   MySql5.5以上
 
 部署流程:
@@ -16,6 +17,13 @@ Java及依赖安装:
 百度网盘: https://pan.baidu.com/s/10H82J6i0uuWcucs4CGjYtg 提取码: 57nq
 
 
+代码解析:
+1. api路由在 /conf/routes
+2. 业务代码在 /app 目录下的controller, model, views
+3. js及静态资源在 /public 目录下
+
+
 有问题可报Issue或联系:
+
 微信 ly17040643
 邮箱 17040643@QQ.com

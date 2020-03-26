@@ -1,7 +1,9 @@
 # wechat_shop_health_product
 保健品微信商城(公众号商城微信支付)
 
-包括官网, 微商城, 后台管理. 截图如下
+包括官网, 微商城, 后台管理. 
+
+功能包含促销积分, 砍价, 三级分销, 截图如下:
 
 ![Image text](http://www.woyik.com/img/health_product_site.png)
 
